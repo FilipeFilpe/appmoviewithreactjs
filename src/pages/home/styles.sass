@@ -1,0 +1,34 @@
+$primary-color: #da552f
+.content
+    display: flex
+    justify-content: center
+    div
+        text-align: center
+        max-width: 1000px
+        background: #fff
+        .movie-list, article a
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: flex-start
+            margin: 15px
+            article a
+                flex-direction: column
+                strong
+                    width: 200px
+        .controls
+            width: 500px
+            display: flex
+            justify-content: space-between
+            button
+                border: none
+                cursor: pointer
+                padding: 5px 10px
+                background: #fff
+                border: 1px solid
+                border-radius: 10px
+                font-weight: bolder
+                color: $primary-color
+            button:hover
+                background: $primary-color
+                color: #fff

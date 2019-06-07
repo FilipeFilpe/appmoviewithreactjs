@@ -1,0 +1,33 @@
+$primary-color: #da552f
+
+%white-color
+    color: $primary-color
+
+.header
+    height: 60px
+    background: $primary-color
+    font-size: 18px
+    font-weight: bold
+    @extend %white-color
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    ul
+        max-width: 425px
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        li
+           width: 100px
+           text-align: center
+           border-bottom: 2px solid #fff
+           transition: 0.5s
+           a
+               font-weight: 300
+               color: #fff
+        li:hover
+            background: #fff
+            a
+                font-weight: 600
+                color: $primary-color
