@@ -44,12 +44,22 @@ class Home extends Component {
 
         this.loadMovies(pageNumber);
     }
+
     last = () => {
         const { page, infos } = this.state;
 
         if (page === infos.total_pages) return;
 
         const pageNumber = infos.total_pages;
+
+        this.loadMovies(pageNumber);
+    }
+    first = () => {
+        const { page } = this.state;
+
+        if (page === 1) return;
+
+        const pageNumber = 1;
 
         this.loadMovies(pageNumber);
     }
