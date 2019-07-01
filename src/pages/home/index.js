@@ -81,11 +81,15 @@ class Home extends Component {
                             </article>
                         ))}
                         <div className="controls">
-                            <button className="first" onClick={this.first}>Primeiro</button>
-                            <button className="prev" onClick={this.prevPage}>Anterior</button>
+                            <div>
+                                <button className="first" onClick={this.first}>Primeiro</button>
+                                <button className="prev" onClick={this.prevPage}>Anterior</button>
+                            </div>
                             <span>{page} - {infos.total_pages}</span>
-                            <button className="next" onClick={this.nextPage}>Próximo</button>
-                            <button className="last" onClick={this.last}>Último</button>
+                            <div>
+                                <button className="next" onClick={this.nextPage}>Próximo</button>
+                                <button className="last" onClick={this.last}>Último</button>
+                            </div>
                         </div>
                     </div>
                 </div>
